@@ -908,12 +908,22 @@ body {
         gap: 2rem;
     }
 
+    .hero-content {
+        width: min(100%, 360px);
+        margin: 0 auto;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
 
     .hero-subtitle {
         font-size: 1.4rem;
+    }
+
+    .hero-description {
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .download-content {
@@ -957,6 +967,10 @@ body {
         padding: 100px 0 60px;
     }
 
+    .hero-content {
+        width: min(100%, 330px);
+    }
+
     .page-header {
         padding: 100px 0 40px;
     }
@@ -971,6 +985,12 @@ body {
 
     .hero-title {
         font-size: 2rem;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
     }
 
     .btn {
@@ -1158,4 +1178,3 @@ html {
         font-size: 2rem;
     }
 }
-

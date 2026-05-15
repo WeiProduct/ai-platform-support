@@ -1,16 +1,18 @@
 // AI平台网站主要JavaScript功能
 
 document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = document.querySelector('#currentYear');
+    if (currentYear) {
+        currentYear.textContent = String(new Date().getFullYear());
+    }
+
     // 初始化所有功能
     initNavigation();
     initFAQ();
     initSmoothScrolling();
     initAnimations();
     initForms();
-    initBackToTop();
-    
-    console.log('AI平台网站已加载完成');
-});
+    initBackToTop();});
 
 // 导航栏功能
 function initNavigation() {
@@ -523,7 +525,6 @@ window.addEventListener('error', function(e) {
 // 页面卸载时的清理
 window.addEventListener('beforeunload', function() {
     // 清理定时器、事件监听器等
-    console.log('页面正在卸載...');
 });
 
 // 初始化性能优化

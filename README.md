@@ -123,12 +123,12 @@
 ## 联系信息
 
 如有问题或建议，请联系：
-- 邮箱: support@ai-platform.com
+- 邮箱: 1597498880weiproduct@gmail.com
 - 网站: https://weiproduct.github.io/ai-platform-support/
 
 ## 更新日志
 
-### v1.0.0 (2024-07-30)
+### v1.0.0 (2026-05-15)
 - 初始版本发布
 - 完整的网站功能
 - 响应式设计实现
@@ -136,4 +136,4 @@
 
 ---
 
-© 2024 AI平台. All rights reserved.
+© 2026 WeiProduct. All rights reserved.
