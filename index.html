@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI平台 - 智能对话，无限可能</title>
-    <meta name="description" content="AI平台是一款集成OpenAI GPT和Google Gemini的智能聊天应用，支持多模型对话、提示词库、聊天管理等功能。">
-    <meta name="keywords" content="AI聊天,人工智能,GPT,Gemini,智能对话,iOS应用">
-    <meta name="robots" content="index,follow">
-    <meta name="theme-color" content="#007AFF">
-    <link rel="canonical" href="https://weiproduct.github.io/ai-platform-support/">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="assets/app-icon.png">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="AI平台 - 智能对话，无限可能">
-    <meta property="og:description" content="体验最先进的AI对话技术，支持多种AI模型，让创意与效率倍增。">
-    <meta property="og:image" content="https://weiproduct.github.io/ai-platform-support/assets/app-preview.png">
-    <meta property="og:url" content="https://weiproduct.github.io/ai-platform-support/">
+    <meta name="theme-color" content="#007AFF" id="themeColorMeta">
+    <meta name="robots" content="index, follow">
+    <title>AI平台 - 多模型 AI 对话助手 | AI Platform</title>
+    <meta name="description" content="AI平台是一款集成 OpenAI GPT-4、GPT-3.5 与 Google Gemini 的 iOS 智能对话应用，支持多模型切换、提示词库、聊天管理和流式回复，对话本地加密存储。">
+    <meta name="keywords" content="AI聊天,人工智能,GPT-4,GPT-3.5,Gemini,多模型,智能对话,流式响应,iOS应用">
+    <meta property="og:title" content="AI平台 | AI Platform">
+    <meta property="og:description" content="GPT-4、GPT-3.5 与 Google Gemini，一个 App 全都有。提示词库、流式回复、聊天管理，数据本地加密。">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weiproduct.github.io/ai-platform-support/">
+    <meta property="og:image" content="https://weiproduct.github.io/ai-platform-support/assets/app-preview.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI平台 - 智能对话，无限可能">
-    <meta name="twitter:description" content="多模型 AI 对话、提示词库和聊天管理工具。">
+    <meta name="twitter:title" content="AI平台 | AI Platform">
+    <meta name="twitter:description" content="Multi-model AI chat for iOS — GPT-4, GPT-3.5 and Google Gemini in one app. Prompt library, streaming replies, on-device encryption.">
     <meta name="twitter:image" content="https://weiproduct.github.io/ai-platform-support/assets/app-preview.png">
+    <link rel="canonical" href="https://weiproduct.github.io/ai-platform-support/">
+    <link rel="alternate" hreflang="zh-CN" href="https://weiproduct.github.io/ai-platform-support/">
+    <link rel="alternate" hreflang="en" href="https://weiproduct.github.io/ai-platform-support/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23007AFF'/%3E%3Cstop offset='1' stop-color='%235B5BEF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cpath d='M26 30 h48 a7 7 0 0 1 7 7 v25 a7 7 0 0 1 -7 7 H45 l-13 11 v-11 h-6 a7 7 0 0 1 -7 -7 V37 a7 7 0 0 1 7 -7 z' fill='none' stroke='white' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M50 39 l3.2 7.8 7.8 3.2 -7.8 3.2 -3.2 7.8 -3.2 -7.8 -7.8 -3.2 7.8 -3.2 z' fill='white'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23007AFF'/%3E%3Cstop offset='1' stop-color='%235B5BEF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cpath d='M26 30 h48 a7 7 0 0 1 7 7 v25 a7 7 0 0 1 -7 7 H45 l-13 11 v-11 h-6 a7 7 0 0 1 -7 -7 V37 a7 7 0 0 1 7 -7 z' fill='none' stroke='white' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M50 39 l3.2 7.8 7.8 3.2 -7.8 3.2 -3.2 7.8 -3.2 -7.8 -7.8 -3.2 7.8 -3.2 z' fill='white'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,270 +33,321 @@
       "name": "AI平台",
       "alternateName": "AI Platform",
       "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "iOS, iPadOS",
+      "operatingSystem": "iOS 17.0+",
       "url": "https://weiproduct.github.io/ai-platform-support/",
+      "image": "https://weiproduct.github.io/ai-platform-support/assets/app-preview.png",
       "downloadUrl": "https://apps.apple.com/app/id6748650326",
-      "creator": {
-        "@type": "Organization",
-        "name": "WeiProduct",
-        "url": "https://weiproduct.com/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@type": "Organization", "name": "WeiProduct", "url": "https://weiproduct.com/" },
+      "description": "AI平台是一款集成 OpenAI GPT-4、GPT-3.5 与 Google Gemini 的 iOS 智能对话应用，支持多模型切换、提示词库、聊天管理和流式回复，对话本地加密存储。"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "AI平台支持哪些 AI 模型？", "acceptedAnswer": { "@type": "Answer", "text": "支持 OpenAI 的 GPT-4、GPT-3.5 Turbo，以及 Google 的 Gemini 系列，可在对话中随时一键切换。" } },
+        { "@type": "Question", "name": "我的对话会被上传或用于训练吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。对话记录加密保存在您的设备本地，我们不在服务器留存聊天内容，也不会用于模型训练。" } },
+        { "@type": "Question", "name": "API 密钥安全吗？", "acceptedAnswer": { "@type": "Answer", "text": "您的 API 密钥仅安全保存在设备本地，绝不会上传到我们的服务器。" } },
+        { "@type": "Question", "name": "AI平台是免费的吗？", "acceptedAnswer": { "@type": "Answer", "text": "App 本体完全免费，无广告、无强制内购。" } },
+        { "@type": "Question", "name": "支持哪些语言和系统版本？", "acceptedAnswer": { "@type": "Answer", "text": "支持简体中文与英文双语，需要 iOS 17.0 或更高版本。" } }
+      ]
     }
     </script>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="assets/app-icon.png" alt="AI平台" class="nav-logo">
-                <span class="nav-title">AI平台</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">首页</a>
-                <a href="#features" class="nav-link">功能</a>
-                <a href="#screenshots" class="nav-link">截图</a>
-                <a href="https://apps.apple.com/app/id6748650326" class="nav-link" target="_blank" rel="noopener noreferrer">下载</a>
-                <a href="support.html" class="nav-link">支持</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="nav-brand" href="#" aria-label="AI平台">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#007AFF"/><stop offset="1" stop-color="#5B5BEF"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg)"/><path d="M26 30 h48 a7 7 0 0 1 7 7 v25 a7 7 0 0 1 -7 7 H45 l-13 11 v-11 h-6 a7 7 0 0 1 -7 -7 V37 a7 7 0 0 1 7 -7 z" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/><path d="M50 39 l3.2 7.8 7.8 3.2 -7.8 3.2 -3.2 7.8 -3.2 -7.8 -7.8 -3.2 7.8 -3.2 z" fill="#fff"/></svg>
+                </span>
+                <span class="brand-name">AI平台</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#how" class="nav-link" data-i18n="navHow">使用流程</a>
+                <a href="#models" class="nav-link" data-i18n="navModels">支持模型</a>
+                <a href="#features" class="nav-link" data-i18n="navFeatures">功能特点</a>
+                <a href="#screenshots" class="nav-link" data-i18n="navScreenshots">应用截图</a>
+                <a href="#faq" class="nav-link" data-i18n="navFaq">常见问题</a>
+                <button class="icon-btn" type="button" id="themeToggle" aria-label="切换深色模式">
+                    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>
+                    <span id="langLabel">EN</span>
+                </button>
+                <a href="https://apps.apple.com/app/id6748650326" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer" data-i18n="navGet">获取 App</a>
             </div>
         </div>
     </nav>
 
-    <!-- 主页部分 -->
-    <section id="home" class="hero">
-        <div class="hero-container">
+    <main id="main">
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">AI平台</h1>
-                <h2 class="hero-subtitle">智能对话，无限可能</h2>
-                <p class="hero-description">
-                    体验最先进的AI对话技术，集成OpenAI GPT和Google Gemini，
-                    支持多种AI模型，让您的创意与效率倍增。
-                </p>
+                <span class="eyebrow" data-i18n="heroEyebrow">✦ 多模型 AI 对话助手</span>
+                <h1 class="hero-title" data-i18n="heroTitle">智能对话，无限可能</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">在一个 App 里使用 GPT-4、GPT-3.5 与 Google Gemini。提示词库、流式回复、聊天管理，对话本地加密。</p>
                 <div class="hero-buttons">
-                    <a href="https://apps.apple.com/app/id6748650326" class="btn btn-primary" target="_blank" rel="noopener noreferrer">立即下载</a>
-                    <a href="#features" class="btn btn-secondary">了解更多</a>
+                    <a href="https://apps.apple.com/app/id6748650326" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <span class="download-label" data-i18n="downloadBtn">App Store 下载</span>
+                    </a>
+                    <a href="#how" class="btn btn-secondary" data-i18n="learnMore">了解更多</a>
                 </div>
+                <ul class="hero-trust">
+                    <li data-i18n="trust1">🔒 对话本地加密</li>
+                    <li data-i18n="trust2">⚡ 实时流式回复</li>
+                    <li data-i18n="trust3">🌏 中英双语</li>
+                </ul>
             </div>
-            <div class="hero-image">
-                <img src="assets/app-preview.png" alt="AI平台预览" class="preview-image" width="1024" height="1024" fetchpriority="high" decoding="async">
+            <div class="hero-visual">
+                <div class="device" role="img" aria-label="AI平台的对话界面演示，用户提问后 AI 流式回复">
+                    <div class="device-notch" aria-hidden="true"></div>
+                    <div class="chat">
+                        <div class="chat-head">
+                            <span class="chat-title">AI 平台</span>
+                            <span class="model-pill"><span class="dot"></span>GPT-4</span>
+                        </div>
+                        <div class="chat-body">
+                            <div class="msg msg-user" data-i18n="chatUser">帮我写一封感谢客户的邮件</div>
+                            <div class="typing" aria-hidden="true"><span></span><span></span><span></span></div>
+                            <div class="msg msg-ai">
+                                <span class="msg-model">GPT-4</span>
+                                <span data-i18n="chatAi">当然！这是一封简洁又专业的草稿，你可以直接使用或再作调整…</span>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <span class="chat-ph" data-i18n="chatPlaceholder">输入消息…</span>
+                            <span class="send-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-chip chip-a" data-i18n="chipA">⚡ 流式回复</div>
+                <div class="hero-chip chip-b" data-i18n="chipB">🔒 本地加密</div>
             </div>
-        </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29C47.79,22.17,103.59,32.58,158,28,228.09,21.58,290.84,2.84,358,19.37C425.16,35.9,479.17,59.47,548,52.81C616.83,46.15,662.17,23.84,718,22.17C773.83,20.5,816.08,37.33,882,33.32C947.92,29.31,1020.56,13.13,1073,4.37C1125.44,-4.39,1158.78,4.37,1175,10.37L1200,16.37V120H0Z"/>
-            </svg>
         </div>
     </section>
 
-    <!-- 功能特性部分 -->
+    <section class="proof" aria-label="trust">
+        <div class="container proof-row">
+            <div class="proof-rating">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <div class="proof-sub"><strong>App Store</strong><span data-i18n="proofRating">效率工具 · AI 助手</span></div>
+            </div>
+            <div class="proof-stats">
+                <div class="stat"><strong>iOS 17+</strong><span data-i18n="stat1">原生体验</span></div>
+                <div class="stat"><strong>GPT · Gemini</strong><span data-i18n="stat2">多模型</span></div>
+                <div class="stat"><strong>100%</strong><span data-i18n="stat3">本地加密</span></div>
+                <div class="stat"><strong>0</strong><span data-i18n="stat4">广告 · 追踪</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howTitle">三步开始 AI 对话</h2>
+            <p class="section-sub" data-i18n="howSub">选模型、提问、得到答案，就这么简单。</p>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-badge">1</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/></svg></div>
+                    <h3 data-i18n="step1Title">选择 AI 模型</h3>
+                    <p data-i18n="step1Desc">一键在 GPT-4、GPT-3.5 与 Google Gemini 之间切换，为不同任务挑选合适的引擎。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">2</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-4 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M8 9h8M8 13h5"/></svg></div>
+                    <h3 data-i18n="step2Title">输入你的问题</h3>
+                    <p data-i18n="step2Desc">从提示词库挑选模板，或直接输入需求，即可开始对话。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">3</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></div>
+                    <h3 data-i18n="step3Title">获得流式回答</h3>
+                    <p data-i18n="step3Desc">AI 实时逐字回复，对话自动分组保存，随时可搜索与导出。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="models" class="models">
+        <div class="container">
+            <h2 class="section-title" data-i18n="modelsTitle">一个 App，多种大模型</h2>
+            <p class="section-sub" data-i18n="modelsSub">按任务挑选最合适的引擎，随时无缝切换。</p>
+            <div class="models-grid">
+                <div class="model-card reveal">
+                    <span class="model-vendor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>OpenAI</span>
+                    <div class="model-name">GPT-4</div>
+                    <span class="model-tag" data-i18n="model1Tag">深度推理</span>
+                    <p data-i18n="model1Desc">复杂推理与创作的旗舰模型，擅长长文写作、代码与多步问题。</p>
+                </div>
+                <div class="model-card reveal">
+                    <span class="model-vendor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>OpenAI</span>
+                    <div class="model-name">GPT-3.5 Turbo</div>
+                    <span class="model-tag" data-i18n="model2Tag">极速响应</span>
+                    <p data-i18n="model2Desc">日常问答与快速草稿的高性价比之选，响应迅速、开箱即用。</p>
+                </div>
+                <div class="model-card reveal">
+                    <span class="model-vendor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg>Google</span>
+                    <div class="model-name">Gemini Pro</div>
+                    <span class="model-tag" data-i18n="model3Tag">均衡理解</span>
+                    <p data-i18n="model3Desc">Google 的强力模型，推理与理解能力均衡，适合广泛的对话场景。</p>
+                </div>
+                <div class="model-card reveal">
+                    <span class="model-vendor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg>Google</span>
+                    <div class="model-name">Gemini Flash</div>
+                    <span class="model-tag" data-i18n="model4Tag">轻量高效</span>
+                    <p data-i18n="model4Desc">为速度优化的轻量模型，低延迟、低成本，适合高频快速对话。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="features" class="features">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">强大功能</h2>
-                <p class="section-subtitle">为您提供最优质的AI对话体验</p>
-            </div>
+            <h2 class="section-title" data-i18n="featuresTitle">核心功能</h2>
+            <p class="section-sub" data-i18n="featuresSub">为高效、专注的 AI 对话而设计的每一处细节。</p>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">多模型支持</h3>
-                    <p class="feature-description">支持GPT-4、GPT-3.5、Gemini等多种先进AI模型，满足不同场景需求。</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/></svg></div>
+                    <h3 data-i18n="feature1Title">多模型支持</h3>
+                    <p data-i18n="feature1Desc">一个 App 集成 GPT-4、GPT-3.5 与 Google Gemini，随任务自由切换。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">智能提示词库</h3>
-                    <p class="feature-description">内置丰富的提示词模板，支持自定义提示词，快速启动各种对话场景。</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9.5 8.5l1.2 2.4 2.4 1.2-2.4 1.2-1.2 2.4-1.2-2.4L6 12.1l2.3-1.2z"/></svg></div>
+                    <h3 data-i18n="feature2Title">智能提示词库</h3>
+                    <p data-i18n="feature2Desc">内置丰富的提示词模板，支持自定义，一键启动各种对话场景。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9,22 9,12 15,12 15,22"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">聊天管理</h3>
-                    <p class="feature-description">支持聊天分组、搜索、导出等功能，让您的对话历史井然有序。</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 13h8M8 16.5h5"/></svg></div>
+                    <h3 data-i18n="feature3Title">聊天管理</h3>
+                    <p data-i18n="feature3Desc">对话分组、搜索、导出，让你的历史记录井然有序、随手可寻。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V6a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V12a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">个性化设置</h3>
-                    <p class="feature-description">深色模式、字体大小、语言设置等个性化选项，打造专属体验。</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M1 14h6M9 8h6M17 16h6"/></svg></div>
+                    <h3 data-i18n="feature4Title">个性化设置</h3>
+                    <p data-i18n="feature4Desc">深色模式、字体大小、语言切换等选项，打造专属你的使用体验。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <polyline points="21,15 16,10 5,21"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">流式响应</h3>
-                    <p class="feature-description">实时显示AI回复过程，提供更流畅的对话体验。</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></div>
+                    <h3 data-i18n="feature5Title">流式响应</h3>
+                    <p data-i18n="feature5Desc">AI 回复实时逐字呈现，就像在与真人对话，体验更流畅自然。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">隐私安全</h3>
-                    <p class="feature-description">本地数据加密存储，API密钥安全管理，保护您的隐私安全。</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7 3v5c0 4.4-3 8.3-7 9.5-4-1.2-7-5.1-7-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3 data-i18n="feature6Title">隐私安全</h3>
+                    <p data-i18n="feature6Desc">对话本地加密存储，API 密钥仅保存在设备上，绝不上传服务器。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 应用截图部分 -->
     <section id="screenshots" class="screenshots">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">应用截图</h2>
-                <p class="section-subtitle">直观了解AI平台的界面设计</p>
+            <h2 class="section-title" data-i18n="screenshotsTitle">应用截图</h2>
+            <p class="section-sub" data-i18n="screenshotsSub">左右滑动，点击可放大查看。</p>
+            <div class="gallery">
+                <button class="gal-arrow prev" type="button" aria-label="上一张" id="galPrev">‹</button>
+                <div class="gal-track" id="galTrack">
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/screenshot-1.png" alt="智能对话界面" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot1">简洁优雅的对话界面</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/screenshot-2.png" alt="多模型切换" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot2">一键切换多种 AI 模型</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/screenshot-3.png" alt="提示词库" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot3">丰富的提示词模板</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="assets/screenshot-4.png" alt="个性化设置" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot4">多样化的个性设置</figcaption>
+                    </figure>
+                </div>
+                <button class="gal-arrow next" type="button" aria-label="下一张" id="galNext">›</button>
             </div>
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <img src="assets/screenshot-1.png" alt="聊天界面" class="screenshot-image" width="600" height="1300" loading="lazy" decoding="async">
-                    <div class="screenshot-overlay">
-                        <h3>智能对话界面</h3>
-                        <p>简洁优雅的对话界面</p>
-                    </div>
-                </div>
-                <div class="screenshot-item">
-                    <img src="assets/screenshot-2.png" alt="模型选择" class="screenshot-image" width="600" height="1300" loading="lazy" decoding="async">
-                    <div class="screenshot-overlay">
-                        <h3>多模型选择</h3>
-                        <p>支持多种AI模型切换</p>
-                    </div>
-                </div>
-                <div class="screenshot-item">
-                    <img src="assets/screenshot-3.png" alt="提示词库" class="screenshot-image" width="600" height="1300" loading="lazy" decoding="async">
-                    <div class="screenshot-overlay">
-                        <h3>提示词库</h3>
-                        <p>丰富的提示词模板</p>
-                    </div>
-                </div>
-                <div class="screenshot-item">
-                    <img src="assets/screenshot-4.png" alt="设置界面" class="screenshot-image" width="600" height="1300" loading="lazy" decoding="async">
-                    <div class="screenshot-overlay">
-                        <h3>个性化设置</h3>
-                        <p>多样化的设置选项</p>
-                    </div>
-                </div>
+            <div class="gal-dots" id="galDots" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container privacy-card">
+            <div class="privacy-lead">
+                <h2 data-i18n="privacyTitle">你的对话，只属于你</h2>
+                <p data-i18n="privacyDesc">对话在设备本地加密存储，API 密钥从不上传，我们不在服务器留存任何聊天内容，更不会用于训练。</p>
+            </div>
+            <ul class="privacy-points">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span data-i18n="pp1">对话本地加密</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 21 2M17 6l2 2M15 8l2 2"/></svg><span data-i18n="pp2">密钥仅存本地</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18M18.4 18.4A9 9 0 0 1 5.6 5.6"/><path d="M8.6 3.6A9 9 0 0 1 20.4 15.4"/></svg><span data-i18n="pp3">无服务器留存</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.9 5A9.8 9.8 0 0 1 12 5c6 0 10 7 10 7a13 13 0 0 1-2.3 3M6.6 6.6A13 13 0 0 0 2 12s4 7 10 7a9.5 9.5 0 0 0 3.6-.7"/><path d="M3 3l18 18"/></svg><span data-i18n="pp4">无广告 · 无追踪</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faqTitle">常见问题</h2>
+            <div class="faq-list">
+                <details class="faq-item reveal"><summary data-i18n="q1">AI平台支持哪些 AI 模型？</summary><p data-i18n="a1">支持 OpenAI 的 GPT-4、GPT-3.5 Turbo，以及 Google 的 Gemini 系列，可在对话中随时一键切换。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q2">我的对话会被上传或用于训练吗？</summary><p data-i18n="a2">不会。对话记录加密保存在您的设备本地，我们不在服务器留存聊天内容，也不会用于模型训练。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q3">API 密钥安全吗？</summary><p data-i18n="a3">您的 API 密钥仅安全保存在设备本地，绝不会上传到我们的服务器。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q4">AI平台是免费的吗？</summary><p data-i18n="a4">App 本体完全免费，无广告、无强制内购。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q5">支持哪些语言和系统版本？</summary><p data-i18n="a5">支持简体中文与英文双语，需要 iOS 17.0 或更高版本。</p></details>
             </div>
         </div>
     </section>
 
-    <!-- 下载部分 -->
     <section id="download" class="download">
         <div class="container">
             <div class="download-content">
-                <div class="download-text">
-                    <h2 class="download-title">立即下载AI平台</h2>
-                    <p class="download-description">
-                        开始您的AI对话之旅，体验最先进的人工智能技术。
-                        AI平台现已在App Store上架，支持iOS 17.0及以上版本。
-                    </p>
-                    <div class="download-features">
-                        <div class="download-feature">
-                            <span class="feature-check">✓</span>
-                            <span>完全免费使用</span>
-                        </div>
-                        <div class="download-feature">
-                            <span class="feature-check">✓</span>
-                            <span>支持多种AI模型</span>
-                        </div>
-                        <div class="download-feature">
-                            <span class="feature-check">✓</span>
-                            <span>隐私安全保护</span>
-                        </div>
-                    </div>
-                </div>
+                <h2 data-i18n="downloadTitle">立即下载 AI平台</h2>
+                <p data-i18n="downloadSubtitle">开始你的多模型 AI 对话之旅。</p>
                 <div class="download-buttons">
-                    <a href="https://apps.apple.com/app/id6748650326" class="app-store-button-new" target="_blank" rel="noopener noreferrer">
-                        <div class="app-store-icon">
-                            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.02-1.77-.79-3.29-.79s-1.93.77-3.27.82c-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                            </svg>
-                        </div>
-                        <div class="app-store-text">
-                            <span class="download-on">下载应用</span>
-                            <span class="app-store-name">App Store</span>
-                        </div>
+                    <a href="https://apps.apple.com/app/id6748650326" class="app-store-badge" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <span class="asb-text"><span class="asb-small" data-i18n="asbSmall">下载于</span><span class="asb-big">App Store</span></span>
                     </a>
-                    <div class="download-info">
-                        <p>支持 iOS 17.0 及以上版本</p>
-                        <p>完全免费 · 无内购</p>
-                    </div>
                 </div>
+                <p class="download-note" data-i18n="downloadNote">完全免费 · 无内购 · 需要 iOS 17.0 或更高版本</p>
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
+            <nav class="footer-links-row" aria-label="footer">
+                <a href="#features" data-i18n="navFeatures">功能特点</a>
+                <a href="#screenshots" data-i18n="navScreenshots">应用截图</a>
+                <a href="support.html" data-i18n="footerSupport">用户支持</a>
+                <a href="privacy.html" data-i18n="footerPrivacy">隐私政策</a>
+                <a href="terms.html" data-i18n="footerTerms">使用条款</a>
+            </nav>
             <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <img src="assets/app-icon.png" alt="AI平台" class="footer-logo">
-                        <span class="footer-title">AI平台</span>
-                    </div>
-                    <p class="footer-description">
-                        智能对话，无限可能。体验最先进的AI对话技术。
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h3 class="footer-section-title">产品</h3>
-                    <ul class="footer-links">
-                        <li><a href="#features">功能特性</a></li>
-                        <li><a href="#screenshots">应用截图</a></li>
-                        <li><a href="https://apps.apple.com/app/id6748650326" target="_blank" rel="noopener noreferrer">立即下载</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3 class="footer-section-title">支持</h3>
-                    <ul class="footer-links">
-                        <li><a href="support.html">用户支持</a></li>
-                        <li><a href="privacy.html">隐私政策</a></li>
-                        <li><a href="terms.html">使用条款</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3 class="footer-section-title">联系我们</h3>
-                    <ul class="footer-links">
-                        <li><a href="mailto:1597498880weiproduct@gmail.com">1597498880weiproduct@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear">2026</span> WeiProduct. All rights reserved.</p>
+                <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">AI平台. 保留所有权利。</span></p>
+                <p data-i18n="footerMadeBy">Built by WeiProduct</p>
+                <p>Contact: <a href="mailto:1597498880weiproduct@gmail.com">1597498880weiproduct@gmail.com</a></p>
             </div>
         </div>
     </footer>
+
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-app">
+            <span class="brand-icon sm" aria-hidden="true"><svg viewBox="0 0 100 100" width="30" height="30"><rect width="100" height="100" rx="24" fill="url(#bg)"/><path d="M26 30 h48 a7 7 0 0 1 7 7 v25 a7 7 0 0 1 -7 7 H45 l-13 11 v-11 h-6 a7 7 0 0 1 -7 -7 V37 a7 7 0 0 1 7 -7 z" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/><path d="M50 39 l3.2 7.8 7.8 3.2 -7.8 3.2 -3.2 7.8 -3.2 -7.8 -7.8 -3.2 7.8 -3.2 z" fill="#fff"/></svg></span>
+            <div class="sticky-txt"><strong>AI平台</strong><span data-i18n="stickySub">多模型 AI 助手 · 免费</span></div>
+        </div>
+        <a href="https://apps.apple.com/app/id6748650326" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="stickyGet">获取</a>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
