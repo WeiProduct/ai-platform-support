@@ -122,10 +122,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
 /* Hero chat device widget */
 .hero-visual { position: relative; display: flex; justify-content: center; }
-.device { position: relative; width: 300px; max-width: 78vw; background: var(--card); border: 1px solid var(--border-color); border-radius: 40px; padding: 16px 14px 18px; box-shadow: var(--shadow-lg); }
+.device { position: relative; width: 300px; max-width: 78vw; aspect-ratio: 9 / 19.5; display: flex; flex-direction: column; overflow: hidden; background: var(--card); border: 1px solid var(--border-color); border-radius: 40px; padding: 16px 14px 18px; box-shadow: var(--shadow-lg); }
 .device-notch { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 90px; height: 22px; background: var(--text-primary); opacity: .9; border-radius: 999px; z-index: 3; }
 :root[data-theme="dark"] .device-notch { background: #000; opacity: 1; }
-.chat { margin-top: 30px; display: flex; flex-direction: column; height: 430px; }
+.chat { margin-top: 30px; display: flex; flex-direction: column; flex: 1; min-height: 0; }
 .chat-head { display: flex; align-items: center; justify-content: space-between; padding: 4px 6px 12px; border-bottom: 1px solid var(--border-color); }
 .chat-title { font-weight: 800; font-size: 16px; }
 .model-pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: var(--primary-color); background: var(--chip-bg); padding: 5px 10px; border-radius: 999px; }
