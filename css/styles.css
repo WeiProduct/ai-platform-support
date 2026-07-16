@@ -265,6 +265,89 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .sticky-txt strong { font-size: 15px; }
 .sticky-txt span { font-size: 12px; color: var(--text-secondary); }
 
+/* ---------- Scroll progress ---------- */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--grad); z-index: 1002; pointer-events: none; }
+
+/* ---------- Section eyebrows ---------- */
+.section-eyebrow { display: table; margin: 0 auto 16px; font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary-color); background: var(--chip-bg); padding: 6px 14px; border-radius: 999px; }
+
+/* ---------- Personas ---------- */
+.personas { padding: 88px 0; background: var(--bg-secondary); }
+.personas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+.persona-card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow); transition: transform .3s, box-shadow .3s, border-color .3s; }
+.persona-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.persona-card .feature-icon { width: 48px; height: 48px; margin-bottom: 16px; }
+.persona-card:hover .feature-icon { background: var(--grad); color: #fff; }
+.persona-card h3 { font-size: 19px; margin-bottom: 8px; }
+.persona-card p { color: var(--text-secondary); font-size: 14.5px; margin-bottom: 16px; flex: 1; }
+.persona-prompt { display: block; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'PingFang SC', monospace; font-size: 12.5px; line-height: 1.5; color: var(--text-primary); background: var(--bg-secondary); border: 1px dashed var(--border-color); border-radius: 10px; padding: 9px 12px; margin-bottom: 14px; }
+.persona-card .persona-model { margin-bottom: 0; align-self: flex-start; }
+
+/* ---------- Model recommendation matrix ---------- */
+.model-matrix-block { margin-top: 56px; }
+.mm-title { text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 22px; letter-spacing: -0.01em; }
+.model-matrix-wrap { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 18px; background: var(--card); box-shadow: var(--shadow); -webkit-overflow-scrolling: touch; }
+.model-matrix { width: 100%; border-collapse: collapse; min-width: 640px; font-size: 14.5px; }
+.model-matrix th, .model-matrix td { padding: 13px 18px; text-align: center; border-bottom: 1px solid var(--border-color); }
+.model-matrix thead th { font-size: 13px; font-weight: 700; color: var(--text-secondary); letter-spacing: .02em; background: var(--bg-secondary); white-space: nowrap; }
+.model-matrix thead th:first-child { text-align: left; }
+.model-matrix tbody th { text-align: left; font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+.model-matrix tbody th, .model-matrix thead th:first-child { position: sticky; left: 0; background: var(--card); z-index: 1; }
+.model-matrix thead th:first-child { background: var(--bg-secondary); }
+.model-matrix tbody tr:last-child th, .model-matrix tbody tr:last-child td { border-bottom: none; }
+.mm-dot { display: inline-block; width: 13px; height: 13px; border-radius: 50%; vertical-align: middle; box-sizing: border-box; }
+.mm-rec { background: var(--primary-color); box-shadow: 0 0 0 3px var(--chip-bg); }
+.mm-ok { border: 2px solid var(--text-secondary); opacity: .55; }
+.mm-legend { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 16px; font-size: 13.5px; color: var(--text-secondary); }
+.mm-legend span[data-i18n] { margin-right: 12px; }
+
+/* ---------- Try-it demo ---------- */
+.demo { padding: 88px 0; border-top: 1px solid var(--border-color); }
+.demo-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; max-width: 980px; margin: 0 auto; }
+.demo-seg { display: inline-flex; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 999px; padding: 4px; gap: 4px; margin-bottom: 24px; }
+.seg-btn { border: none; background: transparent; color: var(--text-secondary); font-family: inherit; font-weight: 600; font-size: 14px; padding: 8px 18px; border-radius: 999px; cursor: pointer; transition: background .25s, color .25s, box-shadow .25s; }
+.seg-btn:hover { color: var(--primary-color); }
+.seg-btn.active { background: var(--grad); color: #fff; box-shadow: 0 4px 12px rgba(0,122,255,.3); }
+.demo-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.demo-chip { border: 1px solid var(--border-color); background: var(--card); color: var(--text-primary); font-family: inherit; font-weight: 600; font-size: 14px; padding: 10px 16px; border-radius: 999px; cursor: pointer; box-shadow: var(--shadow); transition: transform .2s, border-color .25s, color .25s; }
+.demo-chip:hover { border-color: var(--primary-color); color: var(--primary-color); transform: translateY(-2px); }
+.demo-hint { margin-top: 20px; font-size: 13px; color: var(--text-secondary); }
+.demo-chat { display: flex; flex-direction: column; height: 380px; width: 100%; max-width: 440px; margin: 0 auto; background: var(--card); border: 1px solid var(--border-color); border-radius: 24px; padding: 18px; box-shadow: var(--shadow-lg); }
+.demo-chat .chat-body { overflow-y: auto; }
+.demo-chat .msg, .demo-chat .typing { animation-delay: 0s; }
+
+/* ---------- Privacy data-flow diagram ---------- */
+.privacy-flow { margin-top: 56px; text-align: center; }
+.pf-diagram { display: flex; align-items: stretch; justify-content: center; gap: 0; }
+.pf-node { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; background: var(--card); border: 1px solid var(--border-color); border-radius: 16px; padding: 18px 24px; box-shadow: var(--shadow); min-width: 190px; }
+.pf-node strong { font-size: 15.5px; }
+.pf-node span { font-size: 12.5px; color: var(--text-secondary); }
+.pf-ic { width: 42px; height: 42px; border-radius: 12px; background: var(--chip-bg); color: var(--primary-color); display: grid; place-items: center; margin-bottom: 6px; }
+.pf-arrow { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 150px; flex-shrink: 0; padding: 0 14px; }
+.pf-arrow-label { font-size: 12px; font-weight: 700; color: var(--primary-color); white-space: nowrap; }
+.pf-arrow-line { position: relative; display: block; width: 100%; height: 2px; background: repeating-linear-gradient(90deg, var(--primary-color) 0 8px, transparent 8px 16px); animation: pfDash 1s linear infinite; }
+.pf-arrow-line::after { content: ""; position: absolute; right: -2px; top: 50%; transform: translateY(-50%); border-left: 8px solid var(--primary-color); border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+@keyframes pfDash { to { background-position: 16px 0; } }
+.pf-drop { display: flex; flex-direction: column; align-items: center; margin-top: 2px; }
+.pf-vline { width: 2px; height: 16px; background: repeating-linear-gradient(180deg, var(--text-secondary) 0 5px, transparent 5px 10px); opacity: .55; }
+.pf-x { width: 24px; height: 24px; border-radius: 50%; background: var(--danger-color); color: #fff; font-size: 12px; font-weight: 800; display: grid; place-items: center; margin: 3px 0; box-shadow: 0 4px 12px rgba(255,59,48,.35); }
+.pf-blocked { display: flex; justify-content: center; margin-top: 2px; }
+.pf-node-muted { border-style: dashed; box-shadow: none; opacity: .8; background: var(--bg-secondary); }
+.pf-node-muted strong { text-decoration: line-through; color: var(--text-secondary); }
+.pf-caption { margin-top: 24px; font-size: 14.5px; color: var(--text-secondary); max-width: 52ch; margin-left: auto; margin-right: auto; }
+
+/* ---------- Footer columns ---------- */
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; text-align: left; margin-bottom: 30px; }
+.footer-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.footer-tagline { font-size: 14px; color: var(--text-secondary); max-width: 32ch; }
+.footer-toggles { display: flex; gap: 10px; }
+.footer-col { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.footer-col h4 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-primary); margin-bottom: 4px; }
+.footer-col a { color: var(--text-secondary); text-decoration: none; font-size: 14px; transition: color .2s; }
+.footer-col a:hover { color: var(--primary-color); text-decoration: none; }
+.footer-bottom { border-top: 1px solid var(--border-color); padding-top: 22px; text-align: center; }
+.footer-bottom p { font-size: 14px; margin: 0; }
+
 /* ---------- Reveal ---------- */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease-out, transform .6s ease-out; }
 .reveal.in { opacity: 1; transform: none; }
@@ -299,6 +382,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
     .privacy-points { grid-template-columns: 1fr; }
     .gal-arrow { display: none; }
 }
+
+@media (max-width: 900px) {
+    .demo-grid { grid-template-columns: 1fr; gap: 36px; }
+    .demo-controls { text-align: center; }
+    .demo-chips { justify-content: center; }
+}
+@media (max-width: 720px) {
+    .pf-diagram { flex-direction: column; align-items: center; }
+    .pf-arrow { width: auto; padding: 12px 0; }
+    .pf-arrow-line { width: 2px; height: 42px; background: repeating-linear-gradient(180deg, var(--primary-color) 0 8px, transparent 8px 16px); animation: pfDashV 1s linear infinite; }
+    .pf-arrow-line::after { right: auto; left: 50%; top: auto; bottom: -2px; transform: translateX(-50%); border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 8px solid var(--primary-color); border-bottom: none; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .footer-brand { align-items: center; }
+    .footer-brand .footer-tagline { margin: 0 auto; }
+    .footer-col { align-items: center; }
+}
+@keyframes pfDashV { to { background-position: 0 16px; } }
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }

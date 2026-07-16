@@ -44,7 +44,36 @@ const I18N = {
     asbSmall: '下载于', downloadNote: '完全免费 · 无内购 · 需要 iOS 17.0 或更高版本',
     footerSupport: '用户支持', footerPrivacy: '隐私政策', footerTerms: '使用条款',
     footerRights: 'AI平台. 保留所有权利。', footerMadeBy: 'Built by WeiProduct',
-    stickySub: '多模型 AI 助手 · 免费', stickyGet: '获取'
+    stickySub: '多模型 AI 助手 · 免费', stickyGet: '获取',
+    navDemo: '在线体验',
+    eyebrowHow: '使用流程', eyebrowPersonas: '适合谁用', eyebrowModels: '支持模型', eyebrowDemo: '在线体验',
+    eyebrowFeatures: '功能特点', eyebrowGallery: '截图预览', eyebrowPrivacy: '隐私承诺', eyebrowFaq: '答疑解惑',
+    personasTitle: '为你的使用场景而生', personasSub: '不同的人，不同的任务——AI平台都有对应的打开方式。',
+    personaRec: '推荐',
+    persona1Title: '学生', persona1Desc: '拆解知识点、生成论文提纲，复杂概念一步步讲给你听。', persona1Prompt: '“用简单的话解释光合作用”',
+    persona2Title: '开发者', persona2Desc: '贴上代码，即刻获得解释、排错与修复建议。', persona2Prompt: '“帮我找出这段函数里的 bug”',
+    persona3Title: '内容创作者', persona3Desc: '初稿、改写、标题灵感，一键即得。', persona3Prompt: '“为这篇文章想 5 个标题”',
+    persona4Title: '职场人', persona4Desc: '邮件、会议纪要、翻译，几秒搞定。', persona4Prompt: '“把这段话改写得更正式”',
+    mmTitle: '不知道选哪个模型？从这里开始。', mmTask: '任务类型',
+    mmRow1: '长文写作', mmRow2: '代码与调试', mmRow3: '日常问答', mmRow4: '高频快速对话', mmRow5: '创意脑暴',
+    mmLegendRec: '推荐', mmLegendOk: '可用',
+    demoTitle: '亲手试试提示词库', demoSub: '点一个模板，看回复实时流出——切换模型，感受不同引擎。',
+    demoHint: '演示为页面内置回复，App 内由所选模型实时生成。',
+    demoWelcome: '选一个上方的提示词模板，看看流式回复的效果 👋',
+    demoChip1: '✉️ 感谢邮件', demoUser1: '帮我写一封给客户的感谢邮件',
+    demoAi1: '当然！开头先感谢客户长期以来的信任，再简要回顾这次合作的成果，最后表达期待继续同行。这是一封可直接发送的草稿…',
+    demoChip2: '💻 解释这段代码', demoUser2: '解释这段代码是做什么的',
+    demoAi2: '这段代码定义了一个防抖函数：它会延迟执行回调，直到事件停止触发一段时间后才真正运行，常用于搜索输入等高频场景…',
+    demoChip3: '✨ 润色翻译', demoUser3: '把这段话润色并翻译成英文',
+    demoAi3: '好的，我会先梳理语序、替换更地道的表达，再给出自然流畅的英文版本，同时保留原文的语气…',
+    demoChip4: '💡 头脑风暴', demoUser4: '帮我头脑风暴周末活动的点子',
+    demoAi4: '来了！1) 城市徒步＋咖啡馆打卡；2) 一日露营看日落；3) 主题读书会；4) 学做一道新菜。想要更小众的方向吗？',
+    pfNode1Title: '你的 iPhone', pfNode1Sub: '对话加密 · 密钥仅存本地',
+    pfArrow: '请求直达', pfNode2Title: '模型服务商',
+    pfNode3Title: '我们的服务器', pfNode3Sub: '无内容留存',
+    pfCaption: '你的请求直达模型服务商，聊天内容绝不经我们的服务器留存。',
+    footTagline: 'GPT-4、GPT-3.5 与 Gemini，一个 App 全都有。',
+    footProduct: '产品', footSupportCol: '支持', footContact: '联系我们'
   },
   'en': {
     skip: 'Skip to content',
@@ -90,11 +119,41 @@ const I18N = {
     asbSmall: 'Download on the', downloadNote: 'Completely free · No IAP · Requires iOS 17.0 or later',
     footerSupport: 'Support', footerPrivacy: 'Privacy Policy', footerTerms: 'Terms of Use',
     footerRights: 'AI Platform. All rights reserved.', footerMadeBy: 'Built by WeiProduct',
-    stickySub: 'Multi-model AI · Free', stickyGet: 'Get'
+    stickySub: 'Multi-model AI · Free', stickyGet: 'Get',
+    navDemo: 'Live demo',
+    eyebrowHow: 'How it works', eyebrowPersonas: "Who it's for", eyebrowModels: 'Models', eyebrowDemo: 'Live demo',
+    eyebrowFeatures: 'Features', eyebrowGallery: 'Gallery', eyebrowPrivacy: 'Privacy', eyebrowFaq: 'FAQ',
+    personasTitle: 'Built for how you work', personasSub: 'Different people, different tasks — AI Platform fits each one.',
+    personaRec: 'Best with',
+    persona1Title: 'Students', persona1Desc: 'Outline essays and get tricky concepts explained step by step.', persona1Prompt: '"Explain photosynthesis in simple terms"',
+    persona2Title: 'Developers', persona2Desc: 'Paste code and get instant explanations, debugging and fixes.', persona2Prompt: '"Find the bug in this function"',
+    persona3Title: 'Creators', persona3Desc: 'Drafts, rewrites and headline ideas on tap.', persona3Prompt: '"Give me 5 headline ideas for this post"',
+    persona4Title: 'Professionals', persona4Desc: 'Emails, summaries and translations in seconds.', persona4Prompt: '"Rewrite this to sound more formal"',
+    mmTitle: 'Not sure which engine? Start here.', mmTask: 'Task',
+    mmRow1: 'Long-form writing', mmRow2: 'Code & debugging', mmRow3: 'Quick Q&A', mmRow4: 'High-frequency chat', mmRow5: 'Brainstorming',
+    mmLegendRec: 'Recommended', mmLegendOk: 'Works well',
+    demoTitle: 'Try the prompt library', demoSub: 'Tap a template and watch the reply stream in — switch engines to feel the difference.',
+    demoHint: 'Demo replies are built into this page — in the app, your chosen model generates them live.',
+    demoWelcome: 'Pick a prompt template above to see streaming replies in action 👋',
+    demoChip1: '✉️ Thank-you email', demoUser1: 'Help me write a thank-you email to a client',
+    demoAi1: "Sure! Open by thanking them for their continued trust, recap what you shipped together, and close by looking ahead. Here's a draft you can send as-is…",
+    demoChip2: '💻 Explain this code', demoUser2: 'Explain what this code does',
+    demoAi2: 'This code defines a debounce function: it delays the callback until events stop firing for a while — handy for search inputs and other high-frequency events…',
+    demoChip3: '✨ Polish & translate', demoUser3: 'Polish this paragraph and translate it into English',
+    demoAi3: "Got it. I'll tighten the flow, swap in more natural phrasing, and produce a fluent English version that keeps your original tone…",
+    demoChip4: '💡 Brainstorm ideas', demoUser4: 'Brainstorm some weekend activity ideas for me',
+    demoAi4: 'Here we go! 1) A city hike with café stops; 2) a day of camping for the sunset; 3) a themed book club; 4) learning one new dish. Want something more off-beat?',
+    pfNode1Title: 'Your iPhone', pfNode1Sub: 'Encrypted chats · keys on device',
+    pfArrow: 'Direct request', pfNode2Title: 'Model provider',
+    pfNode3Title: 'Our servers', pfNode3Sub: 'Nothing stored',
+    pfCaption: 'Your prompt goes straight to the model provider — it never lives on our servers.',
+    footTagline: 'GPT-4, GPT-3.5 and Gemini — all in one app.',
+    footProduct: 'Product', footSupportCol: 'Support', footContact: 'Contact us'
   }
 };
 
 let currentLang = 'zh-CN';
+let demoResetFn = null;
 
 function applyLang(lang) {
   currentLang = I18N[lang] ? lang : 'zh-CN';
@@ -106,6 +165,9 @@ function applyLang(lang) {
   document.documentElement.lang = currentLang;
   const label = document.getElementById('langLabel');
   if (label) label.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
+  const footLabel = document.getElementById('footLangLabel');
+  if (footLabel) footLabel.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
+  if (demoResetFn) demoResetFn();
   try { localStorage.setItem('lang', currentLang); } catch (e) {}
 }
 
@@ -174,16 +236,116 @@ function initGallery() {
   lb.innerHTML = '<button class="lightbox-close" aria-label="close">&times;</button><img alt="">';
   document.body.appendChild(lb);
   const lbImg = lb.querySelector('img');
+  const imgs = shots.map(s => s.querySelector('img'));
+  let lbIndex = -1;
+  const showLb = (i) => {
+    lbIndex = (i + imgs.length) % imgs.length;
+    lbImg.src = imgs[lbIndex].src; lbImg.alt = imgs[lbIndex].alt;
+  };
   const close = () => lb.classList.remove('open');
   lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lightbox-close')) close(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-  track.querySelectorAll('.phone').forEach(p => {
+  track.querySelectorAll('.phone').forEach((p, i) => {
     p.addEventListener('click', () => {
-      const img = p.querySelector('img');
-      lbImg.src = img.src; lbImg.alt = img.alt;
+      showLb(i);
       lb.classList.add('open');
     });
   });
+
+  // Keyboard navigation: arrows drive the lightbox, or the gallery when it's in view
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { close(); return; }
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    const dir = e.key === 'ArrowRight' ? 1 : -1;
+    if (lb.classList.contains('open')) {
+      e.preventDefault();
+      showLb(lbIndex + dir);
+      return;
+    }
+    const r = track.getBoundingClientRect();
+    if (r.top < window.innerHeight * 0.8 && r.bottom > window.innerHeight * 0.2) {
+      e.preventDefault();
+      track.scrollBy({ left: dir * step(), behavior: 'smooth' });
+    }
+  });
+}
+
+// ===== Try-it prompt demo =====
+function initDemo() {
+  const body = document.getElementById('demoBody');
+  if (!body) return;
+  const pillLabel = document.getElementById('demoModelLabel');
+  const segBtns = Array.from(document.querySelectorAll('.demo-seg .seg-btn'));
+  const chips = Array.from(document.querySelectorAll('.demo-chip'));
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let model = 'GPT-4';
+  let timerId = null, intervalId = null;
+
+  function stop() {
+    if (timerId) { clearTimeout(timerId); timerId = null; }
+    if (intervalId) { clearInterval(intervalId); intervalId = null; }
+  }
+
+  function aiBubble(text) {
+    const ai = document.createElement('div');
+    ai.className = 'msg msg-ai';
+    const mm = document.createElement('span');
+    mm.className = 'msg-model';
+    mm.textContent = model;
+    const tx = document.createElement('span');
+    tx.textContent = text || '';
+    ai.appendChild(mm); ai.appendChild(tx);
+    body.appendChild(ai);
+    return tx;
+  }
+
+  function renderWelcome() {
+    stop();
+    body.innerHTML = '';
+    aiBubble(I18N[currentLang].demoWelcome);
+  }
+  demoResetFn = renderWelcome;
+
+  function run(idx) {
+    stop();
+    const t = I18N[currentLang];
+    body.innerHTML = '';
+    const user = document.createElement('div');
+    user.className = 'msg msg-user';
+    user.textContent = t['demoUser' + idx];
+    body.appendChild(user);
+    const reply = t['demoAi' + idx];
+
+    if (reduced.matches) { aiBubble(reply); return; }
+
+    const typing = document.createElement('div');
+    typing.className = 'typing';
+    typing.innerHTML = '<span></span><span></span><span></span>';
+    body.appendChild(typing);
+
+    timerId = setTimeout(() => {
+      timerId = null;
+      typing.remove();
+      const tx = aiBubble('');
+      const zh = currentLang === 'zh-CN';
+      const parts = zh ? Array.from(reply) : reply.split(' ').map((w, i, arr) => (i < arr.length - 1 ? w + ' ' : w));
+      let i = 0;
+      intervalId = setInterval(() => {
+        tx.textContent += parts[i++];
+        body.scrollTop = body.scrollHeight;
+        if (i >= parts.length) stop();
+      }, zh ? 45 : 65);
+    }, 750);
+  }
+
+  chips.forEach(c => c.addEventListener('click', () => run(c.getAttribute('data-demo'))));
+  segBtns.forEach(b => b.addEventListener('click', () => {
+    segBtns.forEach(x => x.classList.toggle('active', x === b));
+    model = b.getAttribute('data-model');
+    if (pillLabel) pillLabel.textContent = model;
+    body.querySelectorAll('.msg-model').forEach(m => { m.textContent = model; });
+  }));
+
+  renderWelcome();
 }
 
 // ===== Scroll reveal =====
@@ -202,10 +364,15 @@ function initReveal() {
 function initScroll() {
   const nav = document.getElementById('navbar');
   const sticky = document.getElementById('stickyCta');
+  const prog = document.getElementById('scrollProgress');
   const onScroll = () => {
     const y = window.scrollY;
     if (nav) nav.classList.toggle('scrolled', y > 20);
     if (sticky) sticky.classList.toggle('show', y > 620);
+    if (prog) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (max > 0 ? Math.min(100, (y / max) * 100) : 0) + '%';
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -216,16 +383,23 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLang();
   initGallery();
+  initDemo();
   initReveal();
   initScroll();
 
   const yr = document.getElementById('currentYear');
   if (yr) yr.textContent = new Date().getFullYear();
 
+  const toggleLang = () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN');
+  const toggleTheme = () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
   const ls = document.getElementById('langSwitch');
-  if (ls) ls.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
+  if (ls) ls.addEventListener('click', toggleLang);
   const tt = document.getElementById('themeToggle');
-  if (tt) tt.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+  if (tt) tt.addEventListener('click', toggleTheme);
+  const fls = document.getElementById('footLangSwitch');
+  if (fls) fls.addEventListener('click', toggleLang);
+  const ftt = document.getElementById('footThemeToggle');
+  if (ftt) ftt.addEventListener('click', toggleTheme);
 
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function (e) {
