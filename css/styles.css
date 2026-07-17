@@ -135,6 +135,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .msg-user { align-self: flex-end; background: var(--grad); color: #fff; border-bottom-right-radius: 5px; animation-delay: .3s; }
 .msg-ai { align-self: flex-start; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-color); border-bottom-left-radius: 5px; animation-delay: 1.05s; }
 .msg-ai .msg-model { display: block; font-size: 10px; font-weight: 700; color: var(--secondary-color); margin-bottom: 4px; letter-spacing: .02em; }
+.msg-static { animation: none; }
 .typing { align-self: flex-start; display: inline-flex; gap: 4px; padding: 12px 14px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; border-bottom-left-radius: 5px; animation: msgIn .5s ease backwards; animation-delay: .65s; }
 .typing span { width: 7px; height: 7px; border-radius: 50%; background: var(--text-secondary); opacity: .5; animation: blink 1.2s infinite; }
 .typing span:nth-child(2) { animation-delay: .2s; }
@@ -156,7 +157,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .proof { padding: 22px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); background: var(--bg-secondary); }
 .proof-row { display: flex; align-items: center; justify-content: space-between; gap: 26px; flex-wrap: wrap; }
 .proof-rating { display: flex; align-items: center; gap: 12px; }
-.stars { color: #FFB400; font-size: 22px; letter-spacing: 2px; }
+.proof-badge { display: inline-flex; align-items: center; justify-content: center; height: 35px; color: var(--text-primary); }
+.proof-badge svg { display: block; }
 .proof-sub { display: flex; flex-direction: column; line-height: 1.25; font-size: 13px; color: var(--text-secondary); }
 .proof-sub strong { color: var(--text-primary); font-size: 15px; }
 .proof-stats { display: flex; gap: 34px; flex-wrap: wrap; }
